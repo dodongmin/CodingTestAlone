@@ -19,3 +19,4 @@ for i in range(1,n):
             time += 1
 
 print(time)
+#

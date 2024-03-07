@@ -1,8 +1,24 @@
 n, w, l = map(int, input().split())
 truck = list(map(int, input().split()))
-time = 0
 
-if sum(truck) == l:
+time = 0
+result = [0] * w 
+
+while result:
+    time += 1
+    result.pop(0)
+
+    if truck:
+        if sum(result) + truck[0] <=l:
+            result.append(truck.pop(0))
+            
+        else:
+            result.append(0)
+        
+print(time)
+
+#반례 존재
+'''if sum(truck) == l:
     time += n + w
 elif len(truck) == 1:
     time += n + w
@@ -21,4 +37,4 @@ else:
             if len(truck) == 1:
                 time += 1
 
-print(time)
+print(time)'''

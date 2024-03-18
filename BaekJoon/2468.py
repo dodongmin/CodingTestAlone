@@ -29,6 +29,7 @@ for i in range(n):
 
 print(result)
 
+# 2번째 방법
 '''import math
 
 n, m = [*map(int,input().split())]
